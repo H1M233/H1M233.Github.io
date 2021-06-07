@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>支付页面</title>
+    <title>Sounds Of H1M233</title>
     <script>
         function Unable() {
             alert("还没弄好呢");
+        }
+        function Qq() {
+            alert("若弹出失败请手动加QQ：3402682926");
+        }
+        function Show() {
+            document.getElementById("Con").innerHTML = '<button style="position:absolute;text-align:center"><a href="Pay.html" style="text-decoration:none;color:black;">买它</a></button>';
         }
     </script>
     <style>
@@ -40,33 +46,84 @@
             color: white;
             box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
         }
+        .head {
+            position: relative;
+            top: -12px;
+            z-index: 5;
+            border-radius: 0px 0px 10px 10px;
+            padding: 100px 0;
+            text-align: center;
+            background: #99e5ff;
+            color: white;
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+            text-shadow: 2px 2px #b3ecff;
+        }
+        .head:hover{
+            box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
+        }
         .second {
             position: relative;
-            top: -16px;
+            top: -22px;
             z-index: 4;
             border-radius: 0px 0px 10px 10px;
             text-align: center;
-            padding: 50px 0;
+            padding: 100px 0;
             background: #b3ecff;
             -webkit-transition-duration: 0.2s;
             transition-duration: 0.2s;
+            text-shadow: 2px 2px #99e5ff;
         }
         .second:hover {
             box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
         }
         .third {
             position: relative;
-            top: -24px;
+            top: -32px;
             z-index: 3;
             border-radius: 0px 0px 10px 10px;
-            padding: 60px 0;
+            padding: 240px 0;
             background: #ccf2ff;
-            text-align: center;
             -webkit-transition-duration: 0.2s;
             transition-duration: 0.2s;
+            text-shadow: 1px 1px #99e5ff;
         }
         .third:hover {
             box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
+        }
+        .forth {
+            position: relative;
+            top: -48px;
+            z-index: 2;
+            width:100%;
+            border-radius: 10px 10px 10px 10px;
+            text-align: center;
+            padding: 60px 0px;
+            background: #e5f9ff;
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+        }
+        .forth:hover {
+            box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
+        }
+        .fifth {
+            position: relative;
+            top: -56px;
+            z-index: 1;
+            border-radius: 0px 0px 10px 10px;
+            text-align: center;
+            padding: 100px 0;
+            background: #f4fdff;
+            -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+        }
+        .fifth:hover {
+            box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
+        }
+        .pos {
+            position:absolute;
+            left:56%;
+            top:16%;
         }
     </style>
 </head>
@@ -77,25 +134,32 @@
         <li style="float:left"><a href="beg.html">乞讨</a></li>
         <li style="float: right"><a href="https://wpa.qq.com/msgrd?v=3&uin=3402682926&site=qq&menu=yes" onclick="Qq()">QQ联系</a></li>
     </ul>
-    <div class="second">
-        <h1 style="color:red">购买方法</h1>
-        <p>扫描后请确认转账对象为<b>H1M233</b></p>
-        <h3>并在备注中填上“买工程”</h3>
-        <p>转账完成后请在支付成功页面截图</p>
-        <p>并将该截图通过B站或QQ发给我</p>
-        <p>我会发给你网盘的链接</p>
-    </div>
+    <div class="head"><h1>Sounds Of H1M233 Vol.1</h1></div>
+        <div class="second">
+            <h1>本采样包中含有：</h1>
+            <p>《All I Want》工程</p>
+            <p>20个Bass采样</p>
+            <p>52个Drums采样</p>
+            <p>6个Fx采样</p>
+            <p>18个Melodic采样</p>
+            <p>35个Serum预设</p>
+        </div>
     <div class="third">
-        <h2 style="color:red;">请勿重复购买，退款很麻烦的！</h2>
-        <h2 style="">点击二维码可下载</h2>
-        <a href="[Data]/Image/WeChat15.jpg" download="微信二维码">
-            <img border="0" src="https://h1m233.github.io/[Data]/Image/WeChat15.jpg" width="20%" style="positon:relative;border-radius: 10px 10px 10px 10px;box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);" alt="图片加载失败">
-        </a>
-        <a href="[Data]/Image/AliPay15.jpg" download="支付宝二维码">
-            <img border="0" src="https://h1m233.github.io/[Data]/Image/AliPay15.jpg" width="20%" style="positon:relative;border-radius: 10px 10px 10px 10px;box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);" alt="图片加载失败">
-        </a>
-        <h4>如有问题可以加QQ:<a href="https://wpa.qq.com/msgrd?v=3&uin=3402682926&site=qq&menu=yes">3402682926</a>或者B站私信直接问</h4>
+        <img src="https://h1m233.github.io/[Data]/Image/Project.png" width="30%" style="position:absolute;left:14%;top:20%;border-radius: 10px 10px 10px 10px;box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);" alt="图片加载失败">
+        <div class="pos">
+            <h1>注意事项：</h1>
+            <p>1.本页面为工程以及附带采样和预设的唯一购买途径</p>
+            <p>2.禁止将本采样包及其内容进行二次售卖</p>
+            <p>3.购买本采样包即可将其中的<b>预设和采样</b>用在您的歌中</p>
+            <p>4.工程仅供学习用途，未经授权严禁上传音频或工程录屏</p>
+            <p>5.该采样包不提供退款服务</p>
+            <p>6.最终解释权归本人所有</p>
+        </div>
     </div>
-    <div class="fifth"><p style="position:fixed;left:45%;top:95%;"><i>Designed by H1M233</i></p></div>
+    <form>
+        <div class="forth">看完注意事项了吗：<input type="checkbox" name="Confirm" onclick="Show()"></div>
+    </form>
+    <div class="fifth" id="Con"></div>
+    <center><i>Designed by H1M233</i></center>
 </body>
 </html>
