@@ -10,10 +10,8 @@ function Unable()
 {
     alert("还没弄好呢");
 }
-
 </script>
 <style>
-
 ul {
     position: relative;
     z-index: 6;
@@ -23,24 +21,26 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #62c1fb;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
-
+ul:hover{
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
+}
 li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 10px 80px;
+    padding: 6px 60px;
     text-decoration: none;
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
 }
-
 li a:hover {
     background-color: #0692E6;
     color: white;
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
 }
-
 .head {
     position: relative;
     top: -8px;
@@ -50,11 +50,11 @@ li a:hover {
     text-align: center;
     background: #99e5ff;
     color: white;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
 }
 
 .head:hover{
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
 }
 .second {
@@ -62,14 +62,13 @@ li a:hover {
     top: -16px;
     z-index: 4;
     border-radius: 0px 0px 10px 10px;
-    text-align: left;
+    text-align: center;
     padding: 200px 0;
     background: #b3ecff;
-}
-
-.second:hover {
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
+}
+.second:hover {
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
 }
 .third {
@@ -77,58 +76,48 @@ li a:hover {
     top: -24px;
     z-index: 3;
     border-radius: 0px 0px 15px 15px;
+    text-align: center;
     padding: 240px 0;
     background: #ccf2ff;
-}
-
-.third:hover {
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
+}
+.third:hover {
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
 }
-
 .forth {
     position: relative;
     top: -32px;
     z-index: 2;
     border-radius: 0px 0px 15px 15px;
+    text-align: center;
     padding: 260px 0;
     background: #e5f9ff;
-}
-
-.forth:hover {
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
+}
+.forth:hover {
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
 }
-
 .fifth {
     position: relative;
     top: -40px;
     z-index: 1;
     border-radius: 0px 0px 15px 15px;
+    text-align: center;
     padding: 280px 0px;
     background: #f4fdff;
-}
-
-.fifth:hover {
     -webkit-transition-duration: 0.2s;
     transition-duration: 0.2s;
+}
+.fifth:hover {
     box-shadow: 0 20px 40px 0 rgba(0,0,0,0.3);
 }
-
-.title {
-
-}
-
 </style>
 </head>
 <body style="margin: 0;background-color: white">
-
-
-
 <ul>
-    <li style="float:left"><a onclick="Unable()">主页</a></li>
+    <li style="float:left"><a href="index.html">主页</a></li>
     <li style="float:left"><a onclick="Unable()">其他</a></li>
     <li style="float:left"><a href="beg.html">乞讨</a></li>
     <li style="float: right"><a onclick="Unable()">个人</a></li>
@@ -136,21 +125,9 @@ li a:hover {
 
 <div class="head"><h1>Sounds Of H1M233 Vol.1</h1></div>
 
-<div id="body" style="font-family: Arial">
-    <div class="second">
-        <h2 style="position:absolute;left:20%;top:1%">支付宝支付</h2>
-        <h2 style="position:absolute;left:70%;top:1%;">微信支付</h2>
-        <img src="https://h1m233.github.io/[Data]/Image/AliPay15.jpg" width="20%" style="position:absolute;left:16%;top:16%;border-radius: 10px 10px 10px 10px;">
-        <img src="https://h1m233.github.io/[Data]/Image/WeChat15.jpg" width="20%" style="position:absolute;left:70%;top:16%;border-radius: 10px 10px 10px 10px;">
-    </div>
-    <div class="third"><h2 style="position:absolute">p3</h2></div>
-    <div class="forth"><h2 style="position:absolute">p4</h2></div>
-
-
-    <div class="fifth"><p style="position:fixed;left:45%;top:92%;"><i>Designed by H1M233</i></p></div>
-</div>
-
-
-
+<div class="second"></div>
+<div class="third"><h2>p3</h2></div>
+<div class="forth"><a href="Pay.html">买它</a></div>
+<div><p style="position:fixed;left:45%;top:95%;"><i>Designed by H1M233</i></p></div>
 </body>
 </html>
